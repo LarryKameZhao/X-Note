@@ -11,8 +11,36 @@ import {
   Addition,
   Button,
   SearchWrapper,
-  SearchInfo
+  SearchInfo,
+  SearchInfoTitle,
+  SearchInfoSwitch,
+  SearchInfoList,
+  SearchInfoItem
 } from "./style";
+
+const getListArea = (show) => {
+  if (show) {
+    return (
+      <SearchInfo>
+        <SearchInfoTitle>
+          热门搜索
+          <SearchInfoSwitch>换一换</SearchInfoSwitch>
+        </SearchInfoTitle>
+        <SearchInfoList>
+          <SearchInfoItem>区块链</SearchInfoItem>
+          <SearchInfoItem>小程序</SearchInfoItem>
+          <SearchInfoItem>Vue</SearchInfoItem>
+          <SearchInfoItem>PHP</SearchInfoItem>
+          <SearchInfoItem>故事</SearchInfoItem>
+        </SearchInfoList>
+      </SearchInfo>
+    )
+  }
+  else {
+    return null
+  }
+}
+
 const Header = (props) => {
   return (
     <HeaderWrapper>
@@ -41,9 +69,7 @@ const Header = (props) => {
           <svg className = {props.focused ?'icon focused':'icon'} aria-hidden="true">
             <use xlinkHref="#icon-search"></use>
           </svg>
-        <SearchInfo>
-
-        </SearchInfo>
+          { getListArea(props.focused)}
         </SearchWrapper>
       </Nav>
       <Addition>
