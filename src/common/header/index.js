@@ -10,7 +10,8 @@ import {
   NavSearch,
   Addition,
   Button,
-  SearchWrapper
+  SearchWrapper,
+  SearchInfo
 } from "./style";
 const Header = (props) => {
   return (
@@ -40,6 +41,9 @@ const Header = (props) => {
           <svg className = {props.focused ?'icon focused':'icon'} aria-hidden="true">
             <use xlinkHref="#icon-search"></use>
           </svg>
+        <SearchInfo>
+
+        </SearchInfo>
         </SearchWrapper>
       </Nav>
       <Addition>
@@ -57,7 +61,7 @@ const Header = (props) => {
 
 const mapStateToProps = (state) => {
   return {
-    focused: state.header.get('focused')
+    focused: state.get('header').get('focused')
   }
 }
 const mapDispatchToProps = (dispatch) => {
