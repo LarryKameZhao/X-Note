@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {CSSTransition} from 'react-transition-group'
 import {
   HeaderWrapper,
   Logo,
@@ -34,11 +34,17 @@ class Header extends Component {
             </svg>
           </NavItem>
           <SearchWrapper>
-            <NavSearch
-            className = {this.state.focused ?'focused':''}
-            onFocus = {this.handleInputFocus}
-            onBlur={this.handleInputBlur}
-            ></NavSearch>
+            <CSSTransition
+              in={this.state.focused}
+              timeout={300}
+              classNames="slide"
+            >
+             <NavSearch
+              className = {this.state.focused ?'focused':''}
+              onFocus = {this.handleInputFocus}
+              onBlur={this.handleInputBlur}
+              ></NavSearch>
+            </CSSTransition>
               <svg className = {this.state.focused ?'icon focused':'icon'} aria-hidden="true">
                 <use xlinkHref="#icon-search"></use>
               </svg>
