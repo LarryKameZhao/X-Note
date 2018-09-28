@@ -1,3 +1,4 @@
 import reducer from './reducer'
-
-export { reducer }
+import * as actionCreators from './actionCreators'
+import * as actionTypes from './constants'
+export { reducer, actionCreators, actionTypes }
