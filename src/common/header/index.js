@@ -116,12 +116,9 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     handleInputFocus (list) {
-      if (list.size === 0) {
-        dispatch(actionCreators.getList())
-      }
-      else {
-        dispatch(actionCreators.searchFocus())
-      }
+      (list.size === 0) && dispatch(actionCreators.getList())
+      dispatch(actionCreators.searchFocus())
+
     },
     handleInputBlur () {
       const action = actionCreators.searchBlur()
