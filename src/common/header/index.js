@@ -20,7 +20,7 @@ import {
 
 class Header extends  Component {
   render() {
-    const { focused, handleInputFocus, handleInputBlur } = this.props
+    const { focused, handleInputFocus, handleInputBlur, list } = this.props
     return (
       <HeaderWrapper>
         <Logo/>
@@ -41,11 +41,11 @@ class Header extends  Component {
             >
               <NavSearch
                 className={focused ? 'focused' : ''}
-                onFocus={handleInputFocus}
+                onFocus={() => handleInputFocus(list)}
                 onBlur={handleInputBlur}
               ></NavSearch>
             </CSSTransition>
-            <svg className={focused ? 'icon focused' : 'icon'} aria-hidden="true">
+            <svg className={focused ? 'icon zoom focused' : 'icon zoom'} aria-hidden="true">
               <use xlinkHref="#icon-search"></use>
             </svg>
             {this.getListArea(focused)}
@@ -64,20 +64,34 @@ class Header extends  Component {
     )
   }
   getListArea = () => {
-    const { focused, list } = this.props
-    if (focused) {
+    const { focused, mouseIn, list, totalPage, page, handleMouseEnter, handleMouseLeave, handleChangePage } = this.props
+    const newList = list.toJS()
+    const pageList = []
+    if (newList.length) {
+      for(let i = (page-1) * 10; i < page*10; ++i){
+        pageList.push(
+          <SearchInfoItem key={newList[i]}>{newList[i]}</SearchInfoItem>
+        )
+      }
+    }
+    if (focused || mouseIn ) {
       return (
-        <SearchInfo>
+        <SearchInfo
+          onMouseEnter={ handleMouseEnter }
+          onMouseLeave={ handleMouseLeave }
+        >
           <SearchInfoTitle>
             热门搜索
-            <SearchInfoSwitch>换一换</SearchInfoSwitch>
+            <SearchInfoSwitch onClick={ ()=>handleChangePage(page,totalPage, this.spinIcon)  }>
+              <svg ref={(icon)=>{this.spinIcon = icon}} className="icon spin" aria-hidden="true">
+                <use xlinkHref="#icon-refresh"></use>
+              </svg>
+              换一换
+            </SearchInfoSwitch>
           </SearchInfoTitle>
           <SearchInfoList>
             {
-              list.map((item) => {
-                return <SearchInfoItem key={item}>{item}</SearchInfoItem>
-              })
-
+              pageList
             }
           </SearchInfoList>
         </SearchInfo>
@@ -93,18 +107,47 @@ class Header extends  Component {
 const mapStateToProps = (state) => {
   return {
     focused: state.get('header').get('focused'),
-    list: state.getIn(['header','list'])
+    list: state.getIn(['header','list']),
+    page: state.getIn(['header','page']),
+    mouseIn: state.getIn(['header','mouseIn']),
+    totalPage: state.getIn(['header','totalPage'])
   }
 }
 const mapDispatchToProps = (dispatch) => {
   return {
-    handleInputFocus () {
-      dispatch(actionCreators.searchFocus())
-      dispatch(actionCreators.getList())
+    handleInputFocus (list) {
+      if (list.size === 0) {
+        dispatch(actionCreators.getList())
+      }
+      else {
+        dispatch(actionCreators.searchFocus())
+      }
     },
     handleInputBlur () {
       const action = actionCreators.searchBlur()
       dispatch(action)
+    },
+    handleMouseEnter () {
+      dispatch(actionCreators.mouseEnter())
+    },
+    handleMouseLeave () {
+      dispatch(actionCreators.mouseLeave())
+    },
+    handleChangePage (page, totalPage, spin) {
+      let originAngle = spin.style.transform.replace(/[^0-9]/ig, '')
+      if (originAngle) {
+        originAngle = parseInt(originAngle, 10)
+      } else {
+        originAngle = 0
+      }
+      spin.style.transform = `rotate(${originAngle + 360}deg)`
+      if (page < totalPage) {
+        dispatch(actionCreators.changePage(page+1))
+      }
+      else {
+        dispatch(actionCreators.changePage(1))
+      }
+
     }
   }
 }
