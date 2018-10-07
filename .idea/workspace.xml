@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a352ec0c-e23c-4cee-9944-36e2b544044c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../Resume" beforeDir="false" afterPath="$PROJECT_DIR$/../Resume" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/api/home.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/home.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/api/homeList.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/homeList.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/components/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/components/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/store/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../musicw" beforeDir="false" afterPath="$PROJECT_DIR$/../musicw" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../qnl" beforeDir="false" afterPath="$PROJECT_DIR$/../qnl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../todolist/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../todolist/.idea/vcs.xml" afterDir="false" />
@@ -186,8 +178,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="484" />
-    <option name="y" value="149" />
+    <option name="x" value="14" />
+    <option name="y" value="97" />
     <option name="width" value="1403" />
     <option name="height" value="766" />
   </component>
@@ -293,15 +285,15 @@
       <option name="presentableId" value="Default" />
       <updated>1538037382164</updated>
       <workItem from="1538037386779" duration="61359000" />
-      <workItem from="1538815087876" duration="11131000" />
+      <workItem from="1538815087876" duration="11720000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72490000" />
+    <option name="totallyTimeSpent" value="73079000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="677" y="120" width="1403" height="766" extended-state="0" />
+    <frame x="484" y="149" width="1403" height="766" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="npm" order="0" side_tool="true" />
