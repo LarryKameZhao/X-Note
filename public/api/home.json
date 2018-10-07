@@ -2,41 +2,112 @@
 	"success": true,
 	"data": {
 		"topicList": [{
-			"id": 1,
-			"title": "社会热点",
-			"imgUrl": "//upload.jianshu.io/collections/images/261938/man-hands-reading-boy-large.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
-		}, {
-			"id": 2,
-			"title": "手手绘",
-			"imgUrl": "//upload.jianshu.io/collections/images/21/20120316041115481.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
-		}],
+          "id": 1,
+          "title": "手绘",
+          "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/Home/Topic/shouhui.jpg"
+        },{
+          "id": 2,
+          "title": "读书",
+          "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/Home/Topic/dushu.jpg"
+        },{
+          "id": 3,
+          "title": "摄影",
+          "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/Home/Topic/sheying.jpg"
+        },{
+          "id": 4,
+          "title": "X-NOTE电影",
+          "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/Home/Topic/dianying.jpg"
+        },{
+          "id": 5,
+          "title": "故事",
+          "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/Home/Topic/gushi.jpg"
+        },{
+          "id": 6,
+          "title": "旅行",
+          "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/Home/Topic/lvxing.png"
+        },{
+          "id": 7,
+          "title": "互联网",
+          "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/Home/Topic/it.jpg"
+        }],
 		"articleList": [{
 			"id": 1,
-			"title": "胡歌12年后首谈车祸",
-			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
+			"title": "梦里周庄",
+			"desc": "小时候学习鲁迅的文章，知道故事里有个美丽的水乡——周庄。于是，身居北方的我，便时常把周庄装进梦乡。今年暑假，接着苏杭之旅，得以走进现实中的周庄。",
+			"imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/homeList/zhouzhuang.jpeg"
 		}, {
 			"id": 2,
-			"title": "胡歌12年后首谈车祸：既然活下来了，就不能白白活着",
-			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
+			"title": "八十天环游地球 ：Day 43 越南大叻-会安 越南男人生活轻松吗？",
+			"desc": "八十天环游地球：Day 43 越南大叻-会安 越南男人生活轻松吗？ 八十天的行程已经过半，身体上的疲劳也随之而来。为了减少旅途的劳累，我们决",
+			"imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/homeList/yuenan.JPG"
 		}, {
 			"id": 3,
-			"title": "胡歌12年后首谈车祸：既然活下来了，就不能白白活着",
-			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
+			"title": "高铁生活圈 | 3-8小时车程，国庆还能到这里看展",
+			"desc": "高铁开通使出行更为便利，不喜坐飞机的朋友也可以在短时间内移动到许多远方城市。除了之前介绍过的广州、深圳、香港，乘坐高铁只需3至8小时可到达的长沙",
+			"imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/homeList/gaotie.jpg"
 		}, {
 			"id": 4,
-			"title": "胡歌12年后首谈车祸：既然活下来了，就不能白白活着",
-			"desc": "文/麦大人 01 胡歌又刷屏了。 近日他上了《朗读者》，而这一期的主题是“生命”，他用磁性的嗓音，朗读了一段《哈姆雷特》中的经典独白，相当震撼：...",
-			"imgUrl": "//upload-images.jianshu.io/upload_images/2259045-2986b9be86b01f63?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240"
-		}],
-		"recommendList": [{
-			"id": 1,
-			"imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-3-7123fd94750759acf7eca05b871e9d17.png"
-		}, {
-			"id": 2,
-			"imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
-		}]
+			"title": "这些年走过的地方——留下记忆，带走你的美丽（泰国）",
+			"desc": "泰国，似乎对这样一个地方情有独钟，于前面一直念叨的摩洛哥一样，一直内心持有着一份向往的心，而这份心，或许因为自己对生活的殷诚，而给了自己太多的眷",
+			"imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/homeList/taiguo.jpg"
+		},
+          {
+            "id": 5,
+            "title": "旅行中的稻城亚丁（没有水份）",
+            "desc": "攻略篇 首先，上个图哈哈哈 大致行程如下：1. 交通：广州成都往返飞机；川西线往返是飞猪上租的包车+司机。成都市内的基本是共享单车+地铁。2公里",
+            "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/homeList/new/daochengyading.jpeg"
+          }, {
+            "id": 6,
+            "title": "享受芽庄的慢时光",
+            "desc": "妻子说，在芽庄的日子过的好慢。我说，是呀，恍如隔世。这是我们第一次出国度假。因为孩子小，我们一直没有走远门。 只在朋友圈里面看好友们环游世界，享受阳光沙滩的美丽时光。这次，我们在纠结了各种旅游选项后，选择了去越南芽庄出游。因为比较近，价格也比较实惠",
+            "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/homeList/new/yazhuang.jpeg"
+          }, {
+            "id": 7,
+            "title": "行走在天堂——武功山徒步",
+            "desc": "从龙山村出发，沿着原始的登山路，蜿蜒而上。茂林修竹，小溪潺潺而过，行走其间，是心灵的回归。一路往上，修长而挺拔的青竹越来越少，参差茂密的树木变得多了。裸露的虬状树根，显得粗大而狰狞，化为了我们登山的阶梯，拾级而上。",
+            "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/homeList/new/wugongshan.jpg"
+          }, {
+            "id": 8,
+            "title": "苦中“行”乐—骑行太平湖",
+            "desc": "  连续两天的骑行，把一路镜头中出现的风土人情，以图片的形式发在微信朋友圈，主要是为了记录，但不管如何，总未免带有几分炫耀。热热闹闹的的点评之中，我认为其中的一条一语中的：苦中行乐。难道年轻的Y也有如此爱恨交织的感受",
+            "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/homeList/new/taipinghu.JPG"
+          },
+          {
+            "id": 9,
+            "title": "【游·忆】神州水乡第一镇 - 甪直古镇",
+            "desc": "在离上海不远的苏州、昆山交界处，有一座被我国著名社会学、人类学家费孝通先生称赞为“神州水乡第一镇”的古镇——甪直古镇。。。抱歉，什么直？lu（四声）直。",
+            "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/homeList/new/luzhi.jpg"
+          }, {
+            "id": 10,
+            "title": "国庆外伶仃岛二日游——伶仃洋里探伶仃",
+            "desc": "中山驶向珠海的车上，听到岳云棚的搞笑导行语音包：前方事故多发路段，我们要青藏高原烧水，慢点开。",
+            "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/homeList/new/lingdingyang.jpg"
+          }, {
+            "id": 11,
+            "title": "最美的自己在路上",
+            "desc": "马上就是中秋小长假，快到下班时才知道自己可以休三天不用加班，匆匆忙忙慌慌张张，不知道是该回家还是去旅行，为了带闺蜜去散心，没有什么计划就定下了自驾团，带着忐忑和欣喜还有一箱零食，在假期第一天下午组队出发奔向安徽歙县徽州古民居。",
+            "imgUrl": "//x-note.oss-cn-beijing.aliyuncs.com/img/homeList/new/zuimeizailushang.jpg"
+          }
+        ],
+		"recommendList": [ {
+          "id": 1,
+          "imgUrl": "https://x-note.oss-cn-beijing.aliyuncs.com/img/Home/Recommend/qiri.png"
+        },
+          {
+            "id": 2,
+            "imgUrl": "https://x-note.oss-cn-beijing.aliyuncs.com/img/Home/Recommend/30ri.png"
+          },
+          {
+            "id": 3,
+            "imgUrl": "https://x-note.oss-cn-beijing.aliyuncs.com/img/Home/Recommend/daxuetang.png"
+          },
+          {
+            "id": 4,
+            "imgUrl": "https://x-note.oss-cn-beijing.aliyuncs.com/img/Home/Recommend/jianshubanquan.png"
+          },
+          {
+            "id": 5,
+            "imgUrl": "https://x-note.oss-cn-beijing.aliyuncs.com/img/Home/Recommend/youxuan.png"
+          }]
 	}
 }
