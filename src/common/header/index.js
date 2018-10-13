@@ -58,12 +58,14 @@ class Header extends  Component {
           </SearchWrapper>
         </Nav>
         <Addition>
+          <Link to='/write'>
           <Button className='writing'>
             <svg className="icon" aria-hidden="true">
               <use xlinkHref="#icon-pencil2"></use>
             </svg>
             写文章
           </Button>
+          </Link>
           <Button className='reg'>注册</Button>
         </Addition>
       </HeaderWrapper>
