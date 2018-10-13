@@ -1,13 +1,12 @@
 import styled from 'styled-components'
 const logoPic = '//x-note.oss-cn-beijing.aliyuncs.com/img/nav-logo.png'
 export const HeaderWrapper = styled.div`
+  z-index: 1;
   height: 58px;
   border-bottom: 1px solid #f0f0f0;
   position: relative;
 `
-export const Logo = styled.a.attrs({
-  href:'/'
-})`
+export const Logo = styled.div `
   height: 58px;
   position:absolute;
   top:0;

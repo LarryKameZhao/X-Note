@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import Topic from './components/Topic'
 import List from './components/List'
 import Recommend from './components/Recommend'
@@ -11,7 +11,7 @@ import {
   HomeRight,
   BackTop
 } from './style'
-class Home extends Component {
+class Home extends PureComponent {
   render () {
     return (
       <HomeWrapper>
