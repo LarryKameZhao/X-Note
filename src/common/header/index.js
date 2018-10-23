@@ -66,7 +66,9 @@ class Header extends  Component {
             写文章
           </Button>
           </Link>
+          <Link to='/register'>
           <Button className='reg'>注册</Button>
+          </Link>
         </Addition>
       </HeaderWrapper>
     )
