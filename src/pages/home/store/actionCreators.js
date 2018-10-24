@@ -112,8 +112,9 @@ const addHomeList = (list, nextPage) => ({
 })
 export const getHomeInfo = () => {
   return (dispatch) => {
-    axios.get('/api/home.json').then((res) => {
+    axios.get('https://www.easy-mock.com/mock/5bcfff4e93cd6b132988ac8a/example/homeList').then((res) => {
       const result = res.data.data
+      console.log('mock1')
       console.log('as1')
       console.log(result)
       const action = changeHomeData(result)
